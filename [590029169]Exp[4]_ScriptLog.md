@@ -13,32 +13,33 @@
 
 ## Exercise 1: [Hello World Script]
 
-## Task Statement: 
+### Task Statement: 
 * [Basic Usage of Shell Scripts]
 
-## Explanation: 
+### Explanation: 
 * [Writing Begginer level Shell Scripts]
 
-## Command(s):
+### Command(s):
 ```
 #!/bin/bash
 echo "Hello, World!"
 ```
 
 #### Output:
-<p align="center">
-<img align="center" src="/img/hello.png" width="900">
-</p>
+
+![hello.png](/.img/hello.png)
+
+---
 
 ## Exercise 2: [Personalized Greeting Script]
 
-## Task Statement: 
+### Task Statement: 
 * [Basic Shell Script to callout user defined function.]
 
-## Explanation: 
+### Explanation: 
 * [This Shell script will take input from user and store it in a variable and then call the variable which will output the stored value.]
 
-## Command(s):
+### Command(s):
 ```
 #!/bin/bash
 echo "Enter your name: "
@@ -46,17 +47,18 @@ read name     # 'read' takes user input
 echo "Hello, $name! Welcome to Shell Scripting."
 ```
 
-## Output:
-<p align="center">
-<img align="center" src="/img/greeting.png" width="900">
-</p>
+### Output:
+
+![greeting.png](/.img/greeting.png)
+
+---
 
 ## Exercise 3: [Arithmetic Operations in Shell Scripting]
 
-## Task Statement:
+### Task Statement:
 * [Using Basic Arithmetic Operations in Shell Scripts]
 
-## Command(s):
+### Command(s):
 ```
 #!/bin/bash
 echo "Enter first number: "
@@ -70,18 +72,19 @@ echo "Multiplication: $((num1 * num2))"
 echo "Division: $((num1 / num2))"
 ```
 
-## Output:
-<p align="center">
-<img align="center" src="/img/arithmetic.png" width="900">
-</p>
+### Output:
+
+![arithmetic.png](/.img/arithmetic.png)
+
+---
 
 ## Exercise 4:
 * [Voting Eligibility]
 
-## Task Statement:
+### Task Statement:
 * [Using if else loop check if the user is eligible to vote or not.]
 
-## Command(s):
+### Command(s):
 ```
 #!/bin/bash
 echo "Enter your age: "
@@ -95,10 +98,11 @@ else
 fi
 ```
 
-## Output:
-<p align="center">
-<img align="center" src="/img/vote.png" width="900">
-</p>
+### Output:
+
+![vote.png](/.img/vote.png)
+
+---
 
 ## Result
 * The Exercises were successfully completed for Basic Shell Scripting.

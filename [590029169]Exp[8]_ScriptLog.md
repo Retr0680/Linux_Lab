@@ -44,9 +44,7 @@ fi
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp8_ifelse.png" width="900">
-</p>
+![exp8_ifelse.png](/.img/exp8_ifelse.png)
 
 ---
 
@@ -75,9 +73,7 @@ esac
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp8_case.png" width="900">
-</p>
+![exp8_case.png](/.img/exp8_case.png)
 
 ---
 
@@ -106,9 +102,7 @@ done
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp8_args.png" width="900">
-</p>
+![exp8_args.png](/.img/exp8_args.png)
 
 ---
 
@@ -140,9 +134,7 @@ fi
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp8_leapyear.png" width="900">
-</p>
+![exp8_leapyear.png](/.img/exp8_leapyear.png)
 
 ---
 

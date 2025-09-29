@@ -15,13 +15,13 @@
 
 ## Exercise 1: [Prime Number Check]
 
-## Task Statement:
+### Task Statement:
 * [To check if the number given by the user is a prime number or not.]
 
-## Explanation:
+### Explanation:
 * [using if else loop wap to check if the number is a prime number or not.]
 
-## Command(s):
+### Command(s):
 ```
 #!/bin/bash
 echo "Enter a number: "
@@ -46,19 +46,20 @@ fi
 ```
 
 ### Output:
-<p align="center">
-<img align="center" src="/img/prime.png" width="900">
-</p>
+
+![prime.png](/.img/prime.png)
+
+---
 
 ## Exercise 2: [Sum of Digits]
 
-## Task Statement:
+### Task Statement:
 * [Take input from user and give the sum of two digits.]
 
-## Explanation:
+### Explanation:
 * [This script will take input from user and will give the following output.]
 
-## Command(s):
+### Command(s):
 ```
 #!/bin/bash
 echo "Enter a number: "
@@ -76,19 +77,20 @@ echo "Sum of digits: $sum"
 ```
 
 ### Output:
-<p align="center">
-<img align="center" src="/img/sum.png" width="900">
-</p>
+
+![sum.png](/.img/sum.png)
+
+---
 
 ## Exercise 3: [Armstrong Numbers]
 
-## Task Statement:
+### Task Statement:
 * [Take input user and give the sum of Armstrong number of n digits is a number equal to the sum of its digits raised to the power n. Example: 153 = 13 + 53 + 33]
 
-## Explanation:
+### Explanation:
 * [This script will tell if the number entered by the user is an armstrong number or not.]
 
-## Command(s):
+### Command(s):
 ```
 #!/bin/bash
 echo "Enter a number: "
@@ -113,9 +115,10 @@ fi
 ```
 
 ### Output:
-<p align="center">
-<img align="center" src="/img/armstrong.png" width="900">
-</p>
+
+![armstrong.png](/.img/armstrong.png)
+
+---
 
 ## Result:
 * The Exercises were successfully completed for Basic Shell Scripting.

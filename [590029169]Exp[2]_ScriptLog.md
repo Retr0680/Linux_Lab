@@ -4,144 +4,318 @@
 
 ### Aim:
 
-* To understand Linux file system structure, file permissions, and basic essential commands.
-* To learn how to manipulate file access permissions using commands like `ls`, `chmod`, and `umask`.
+* To understand the structure of Linux file systems.
+* To learn and practice essential navigation and file management commands.
+* To explore file permissions and ownership, and manage them using Linux commands.
+* To use user management, system information commands, and editing tools.
+* To solve practical exercises and tasks for mastering Linux basics.
 
 ### Requirements
 
-* A Linux machine (Ubuntu, Fedora, or similar) with bash shell.
-* Basic user privileges to create, modify, and delete files.
+* A Linux machine (Ubuntu/Debian/Linux Mint or similar).
+* User privileges to create, modify, and delete files.
+* Access to terminal and text editors like `nano` or `vim`.
+
+---
 
 ## Theory
 
-Linux organizes files into a hierarchical directory structure starting from the root `/`. Every file and directory has associated permissions that define who can read, write, or execute them. Permissions are categorized for the **owner**, **group**, and **others**. Essential commands like `ls`, `pwd`, `cd`, `mkdir`, `chmod`, and `umask` allow navigation and permission management within the file system.
+Linux uses a hierarchical file system starting from the root `/`. Essential directories include `/home`, `/etc`, `/usr`, `/var`, `/bin`, and `/tmp`. File permissions are divided among **owner**, **group**, and **others**, with actions `r` (read), `w` (write), and `x` (execute). Navigation commands like `ls`, `pwd`, `cd`, and file operations (`cp`, `mv`, `rm`) form the basis of Linux usage. Editors (`nano`, `vim`) and commands for system info (`uname`, `df`, `top`, `history`) provide insights and control. Practice tasks build practical confidence.
+
+---
 
 ## Procedure & Observations
 
-## Exercise 1: Explore Linux File System
+### Section 1: File Systems and Permissions
 
-### Task Statement:
+We learned how Linux organizes directories, how to view and change file permissions using `chmod`, `chown`, and `chgrp`.
 
-Navigate through the Linux file system and list important directories such as `/bin`, `/etc`, `/home`, `/var`, `/tmp` and understand their purpose.
+### Section 2: Navigation and File Operations
 
-### Explanation:
+Commands like `ls`, `pwd`, `cd`, `mkdir`, `rmdir`, `touch`, `cp`, `mv`, `rm` were practiced to manage files and directories.
 
-I used the `ls` command to explore the root directory and subdirectories. Each directory has a special purpose, such as `/bin` for binaries, `/etc` for configuration files, `/home` for user data, `/var` for logs, and `/tmp` for temporary files.
+### Section 3: File Viewing and Editing
 
-### Command(s):
+We used `cat`, `less`, `head`, `tail` to view file contents, and practiced editing with `nano` and `vim`.
 
-```bash
-ls /
-ls /bin
-ls /etc
-ls /home
-ls /var
-ls /tmp
-```
+### Section 4: User Management
 
-### Output:
+Commands `whoami`, `who`, `passwd`, `sudo` were practiced to understand users and privileges.
 
-<p align="center">
-<img align="center" src="/img/fs_structure.png" width="900">
-</p>
+### Section 5: System Information
+
+Commands like `uname`, `df`, `top`, `htop`, `history` were used to gather system and process information.
+
+### Section 6: Practice Exercises
+
+Hands-on practice included navigation, file operations, text editing, system exploration, and cleanup.
 
 ---
 
-## Exercise 2: Understanding File Permissions
+## Practice Exercises
 
-### Task Statement:
-
-Check and understand the permissions of files using `ls -l` command.
-
-### Explanation:
-
-The `ls -l` command shows file details including permissions, owner, group, size, and modification date. Permissions are represented in 10 characters: the first indicates file type, and the next nine represent read (r), write (w), and execute (x) permissions for owner, group, and others.
-
-### Command(s):
+### Exercise 1: File System Navigation
 
 ```bash
-ls -l
+cd
+pwd
+mkdir -p projects/linux_practice/{scripts,documents,backup}
+cd projects/linux_practice/scripts
+touch setup.sh cleanup.sh readme.txt
+ls -la
+cd ..
+ls -la
 ```
 
 ### Output:
 
-<p align="center">
-<img align="center" src="/img/ls_permissions.png" width="900">
-</p>
+![exp2_ex1](/.img/exp2_ex1.png)
 
 ---
 
-## Exercise 3: Changing Permissions with `chmod`
-
-### Task Statement:
-
-Use the `chmod` command to change file permissions.
-
-### Explanation:
-
-The `chmod` command modifies file permissions either symbolically (e.g., `u+x`) or numerically (e.g., `755`). For example, `chmod 755 file1` grants read, write, and execute to the owner, and read and execute to group and others.
-
-### Command(s):
+### Exercise 2: File Operations and Permissions
 
 ```bash
-chmod 755 file1.txt
-ls -l file1.txt
-chmod u-w file1.txt
-ls -l file1.txt
+cd ~/projects/linux_practice/documents
+echo "This is a practice document" > practice.txt
+ls -l practice.txt
+chmod 644 practice.txt
+cp practice.txt ../backup/
+cp practice.txt ../backup/practice_backup_$(date +%Y%m%d).txt
+ls -la ../backup/
 ```
 
 ### Output:
 
-<p align="center">
-<img align="center" src="/img/chmod.png" width="900">
-</p>
+
+![exp2_ex2](/.img/exp2_ex2.png)
 
 ---
 
-## Exercise 4: Default Permissions with `umask`
-
-### Task Statement:
-
-Understand the concept of default permissions using the `umask` command.
-
-### Explanation:
-
-The `umask` value determines the default permission bits removed when a new file or directory is created. For example, a `umask` of `022` results in files with `644` permissions and directories with `755` permissions.
-
-### Command(s):
+### Exercise 3: Text Editing and Viewing
 
 ```bash
-umask
-umask 022
-touch newfile
-ls -l newfile
+cd ~/projects/linux_practice/documents
+seq 1 50 > numbers.txt
+head numbers.txt
+tail -n 5 numbers.txt
+cat numbers.txt | grep "25"
+nano numbers.txt
+cat numbers.txt
 ```
 
 ### Output:
 
-<p align="center">
-<img align="center" src="/img/umask.png" width="900">
-</p>
+![exercise3_1.png](/.img/exp2_ex3_1.png)
+![exercise3_2.png](/.img/exp2_ex3_2.png)
+![exercise3_3.png](/.img/exp2_ex3_3.png)
+![exercise3_4.png](/.img/exp2_ex3_4.png)
+
+---
+
+### Exercise 4: System Exploration
+
+```bash
+uname -a
+df -h
+history 10
+who
+whoami
+top
+```
+
+### Output:
+
+![exp2_ex4](/.img/exp2_ex4_1.png)
+![exp2_ex4](/.img/exp2_ex4_2.png)
+
+---
+
+### Exercise 5: Cleanup
+
+```bash
+cd ~/projects/linux_practice
+rm -i documents/numbers.txt
+rmdir backup
+rm -r backup
+ls -la
+history | tail -20
+```
+
+### Output:
+
+![ex2_ex5](/.img/exp2_ex5.png)
+
+---
+
+## Question Bank / Lab Exam Tasks
+
+### Task 1: Directory Navigation
+
+```bash
+mkdir -p ~/test_project/{docs,scripts,data}
+cd ~/test_project/scripts
+pwd
+```
+
+### Output:
+
+![exp2_t1](/.img/exp2_t1.png)
+
+---
+
+### Task 2: File Creation and Content
+
+```bash
+cd ~/test_project/docs
+touch readme.txt notes.txt todo.txt
+echo "Project documentation" > readme.txt
+echo "Important notes" > notes.txt
+cat readme.txt
+cat notes.txt
+```
+
+### Output:
+
+![exp2_t2](/.img/exp2_t2.png)
+
+---
+
+### Task 3: File Operations
+
+```bash
+cp readme.txt ../data/project_info.txt
+mv todo.txt ../scripts/
+```
+
+### Output:
+
+![exp2_t3](/.img/exp2_t3.png)
+
+---
+
+### Task 4: File Permissions
+
+```bash
+cd ~/test_project/scripts
+echo "#\!/bin/bash" > backup.sh
+echo "echo Backup complete" >> backup.sh
+chmod u+x backup.sh
+ls -l backup.sh
+```
+
+### Output:
+
+![exp2_t4](/.img/exp2_t4.png)
+
+---
+
+### Task 5: File Viewing
+
+```bash
+seq 1 20 > numbers.txt
+head -n 5 numbers.txt
+tail -n 3 numbers.txt
+grep "1" numbers.txt
+```
+
+### Output:
+
+![exp2_t5](/.img/exp2_t5.png)
+
+---
+
+### Task 6: Text Editing
+
+```bash
+nano config.txt
+cat config.txt
+```
+
+### Output:
+
+
+![exp2_t6](/.img/exp2_t6.png)
+
+---
+
+### Task 7: System Information
+
+```bash
+echo "Username: $(whoami)" > system_info.txt
+echo "Date: $(date)" >> system_info.txt
+echo "Directory: $(pwd)" >> system_info.txt
+df -h >> system_info.txt
+cat system_info.txt
+```
+
+### Output:
+
+![exp2_t7](/.img/exp2_t7.png)
+
+---
+
+### Task 8: File Organization
+
+```bash
+mkdir ~/test_project/backup
+cp ~/test_project/*/*.txt ~/test_project/backup/
+ls -la ~/test_project/backup
+```
+
+### Output:
+
+![exp2_t8](/.img/exp2_t8.png)
+
+---
+
+### Task 9: Process and History
+
+```bash
+history | wc -l
+history 10
+```
+
+### Output:
+
+![exp2_t9](/.img/exp2_t9.png)
+
+---
+
+### Task 10: Comprehensive Cleanup
+
+```bash
+chmod 754 backup.sh
+find ~/test_project -type f | wc -l > summary.txt
+find ~/test_project -type d | wc -l >> summary.txt
+cat summary.txt
+```
+
+### Output:
+
+![exp2_t10](/.img/exp2_t10.png)
 
 ---
 
 ## Result
 
-* The Linux file system hierarchy was explored successfully.
-* File permissions were checked, modified, and understood using `ls -l`, `chmod`, and `umask`.
-* The experiment helped in learning how Linux controls access to files and directories.
+* Explored Linux file system structure.
+* Practiced file operations, editing, and permissions.
+* Learned user and system management commands.
+* Completed practical exercises and lab exam-style tasks.
 
 ## Challenges Faced & Learning Outcomes
 
-* Challenge 1: Remembering symbolic vs numeric modes in `chmod`. Fixed by practicing with examples.
-* Challenge 2: Understanding the `umask` calculation. Overcame by revising the subtraction method.
+* Challenge 1: Managing complex directory structures.
+* Challenge 2: Remembering symbolic vs numeric permissions.
+* Challenge 3: Using `find`, `grep`, and redirection effectively.
 
 ### Learning:
 
-* Learned how to navigate Linux file systems.
-* Understood file permissions and their significance.
-* Learned how to use `chmod` and `umask` effectively.
+* Mastered Linux navigation, file handling, and permissions.
+* Gained practical knowledge of user/system management.
+* Practiced exam-style tasks to solidify learning.
 
 ## Conclusion
 
-The experiment demonstrated Linux file system organization, permissions, and essential commands. It highlighted the importance of access control and provided hands-on experience in managing file permissions, which is a key skill for Linux system administration.
+This experiment comprehensively covered **Linux file systems, permissions, commands, editing, user management, and system info**. The tasks ensured thorough practice, making it a complete foundation for Linux proficiency.

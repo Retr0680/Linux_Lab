@@ -37,9 +37,7 @@ w
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp7_script.png" width="900">
-</p>
+![exp7_script](/.img/exp7_script.png)
 
 ---
 
@@ -59,9 +57,7 @@ fg %1
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp7_bg_fg.png" width="900">
-</p>
+![exp7_bg_fg](/.img/exp7_bg_fg.png)
 
 ---
 
@@ -81,9 +77,7 @@ kill <pid>
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp7_kill.png" width="900">
-</p>
+![exp7_kill](/.img/exp7_kill.png)
 
 ---
 
@@ -102,9 +96,7 @@ top
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp7_monitor.png" width="900">
-</p>
+![exp7_monitor](/.img/exp7_monitor.png)
 
 ---
 
@@ -118,16 +110,15 @@ Schedule a script to run every day at 7:00 AM using `cron`.
 
 ```bash
 crontab -e
-# Add the following line
-0 7 * * * /home/user/myscript.sh
+0 7 * * * /home/retr0/myscript.sh
 ```
-
+<!--
 ### Output:
 
 <p align="center">
 <img src="/img/exp7_cron.png" width="900">
 </p>
-
+-->
 ---
 
 ## Exercise 6: Using `at` for one-time scheduling
@@ -142,13 +133,13 @@ Schedule a script to run once at a specified time using `at`.
 echo "/home/user/myscript.sh" | at 08:30
 atq
 ```
-
+<!--
 ### Output:
 
 <p align="center">
 <img src="/img/exp7_at.png" width="900">
 </p>
-
+-->
 ---
 
 ## Result

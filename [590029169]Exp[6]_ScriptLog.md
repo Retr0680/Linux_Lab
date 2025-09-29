@@ -34,9 +34,7 @@ done
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp6_for_simple.png" width="900">
-</p>
+![exp6_for_simple.png](/.img/exp6_for_simple.png)
 
 ---
 
@@ -56,9 +54,7 @@ done
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp6_for_files.png" width="900">
-</p>
+![exp6_for_files.png](/.img/exp6_for_files.png)
 
 ---
 
@@ -78,9 +74,7 @@ done
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp6_for_cstyle.png" width="900">
-</p>
+![exp6_for_cstyle.png](/.img/exp6_for_cstyle.png)
 
 ---
 
@@ -110,9 +104,7 @@ done
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp6_while.png" width="900">
-</p>
+![exp6_while](/.img/exp6_while.png)
 
 ---
 
@@ -134,9 +126,7 @@ done
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp6_until.png" width="900">
-</p>
+![exp6_until](/.img/exp6_until.png)
 
 ---
 
@@ -162,9 +152,7 @@ done
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp6_break_continue.png" width="900">
-</p>
+![exp6_break_continue](/.img/exp6_break_continue.png)
 
 ---
 
@@ -187,26 +175,152 @@ done
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp6_nested.png" width="900">
-</p>
+![exp6_nested](/.img/exp6_nested.png)
+
+---
+
+## Assignments
+
+### Assignment 1: Factorial of a Number
+
+### Command(s):
+
+```bash
+#!/bin/bash
+echo -n "Enter a number: "
+read num
+fact=1
+for ((i=1;i<=num;i++)); do
+  fact=$((fact*i))
+done
+echo "Factorial of $num is $fact"
+```
+
+### Output:
+
+![exp6_a1.png](/.img/exp6_a1.png)
+
+---
+
+### Assignment 2: Fibonacci Series
+
+### Command(s):
+
+```bash
+#!/bin/bash
+echo -n "Enter number of terms: "
+read n
+a=0
+b=1
+echo "Fibonacci series:"
+for ((i=0;i<n;i++)); do
+  echo -n "$a "
+  fn=$((a+b))
+  a=$b
+  b=$fn
+done
+echo
+```
+
+### Output:
+
+![exp6_a2.png](/.img/exp6_a2.png)
+
+---
+
+### Assignment 3: Sum of Digits
+
+### Command(s):
+
+```bash
+#!/bin/bash
+echo -n "Enter a number: "
+read num
+sum=0
+temp=$num
+while [ $temp -gt 0 ]; do
+  digit=$((temp % 10))
+  sum=$((sum + digit))
+  temp=$((temp / 10))
+done
+echo "Sum of digits of $num is $sum"
+```
+
+### Output:
+
+![exp6_a3.png](/.img/exp6_a3.png)
+
+---
+
+### Assignment 4: Reverse a Number
+
+### Command(s):
+
+```bash
+#!/bin/bash
+echo -n "Enter a number: "
+read num
+rev=0
+temp=$num
+while [ $temp -gt 0 ]; do
+  digit=$((temp % 10))
+  rev=$((rev * 10 + digit))
+  temp=$((temp / 10))
+done
+echo "Reverse of $num is $rev"
+```
+
+### Output:
+
+![exp6_a4.png](/.img/exp6_a4.png)
+
+---
+
+### Assignment 5: Prime Number Check
+
+### Command(s):
+
+```bash
+#!/bin/bash
+echo -n "Enter a number: "
+read num
+is_prime=1
+for ((i=2;i<=num/2;i++)); do
+  if (( num % i == 0 )); then
+    is_prime=0
+    break
+  fi
+done
+if (( num <= 1 )); then
+  echo "$num is not a prime number"
+elif (( is_prime == 1 )); then
+  echo "$num is a prime number"
+else
+  echo "$num is not a prime number"
+fi
+```
+
+### Output:
+
+![exp6_a5.png](/.img/exp6_a5.png)
 
 ---
 
 ## Result
 
 * Implemented `for`, `while`, and `until` loops and used loop control statements.
-* Practiced reading input, processing files, and nested iteration.
+* Practiced reading input, processing files, nested iteration, and completed assignments like factorial, Fibonacci, sum of digits, reverse number, and prime check.
 
 ## Challenges Faced & Learning Outcomes
 
-* Challenge 1: Handling spaces and special characters when iterating filenames — learned to use quotes and `read -r`.
-* Challenge 2: Remembering arithmetic syntax in Bash — used `(( ))` and `expr` where needed.
+* Challenge 1: Handling user input validation.
+* Challenge 2: Managing arithmetic operations in loops.
 
 ### Learning:
 
-* Loops are powerful for automation in shell scripting. Correct quoting and use of control constructs prevent common bugs.
+* Loops are powerful for automation in shell scripting.
+* Implementing small programs like factorial and Fibonacci builds confidence in shell scripting.
 
 ## Conclusion
 
-The lab demonstrated practical loop constructs in Bash for automating repetitive tasks and processing data efficiently.
+The lab demonstrated practical loop constructs in Bash for automating repetitive tasks, and the assignments extended learning by applying loops to solve mathematical problems.

@@ -38,9 +38,7 @@ touch -t 202401151430 dated_file.txt
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp3_touch.png" width="900">
-</p>
+![exp3_touch](/.img/exp3_touch.png)
 
 ---
 
@@ -61,9 +59,7 @@ rm -r old_directory/
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp3_cp_mv_rm.png" width="900">
-</p>
+![exp3_cp_mv_rm](/.img/exp3_cp_mv_rm.png)
 
 ---
 
@@ -85,9 +81,7 @@ tail -f /var/log/syslog
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp3_cat_less.png" width="900">
-</p>
+![exp3_cat_less](/.img/exp3_cat_less.png)
 
 ---
 
@@ -109,9 +103,7 @@ chgrp developers project.txt
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp3_permissions.png" width="900">
-</p>
+![exp3_permissions](/.img/exp3_permissions.png)
 
 ---
 
@@ -132,9 +124,7 @@ find /tmp -type f -empty -delete
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp3_find.png" width="900">
-</p>
+!![exp3_find](/.img/exp3_find.png)
 
 ---
 
@@ -155,9 +145,7 @@ grep -n "TODO" *.txt
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp3_grep.png" width="900">
-</p>
+!![exp3_grep](/.img/exp3_grep.png)
 
 ---
 
@@ -178,9 +166,7 @@ gunzip largefile.txt.gz
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp3_tar_gzip.png" width="900">
-</p>
+!![exp3_tar_gzip](/.img/exp3_tar_gzip.png)
 
 ---
 
@@ -201,9 +187,7 @@ ls -li original.txt hardlink.txt symlink.txt
 
 ### Output:
 
-<p align="center">
-<img src="/img/exp3_links.png" width="900">
-</p>
+![exp3_links](/.img/exp3_links.png)
 
 ---
 
