@@ -18,7 +18,7 @@ Loops allow repeated execution of commands until a condition is met. Common loop
 
 ## Procedure & Observations
 
-## Exercise 1: Simple `for` loop
+## [Exercise 1: Simple `for` loop](/EXP6/for_simple.sh)
 
 ### Task Statement:
 
@@ -38,7 +38,7 @@ done
 
 ---
 
-## Exercise 2: `for` loop over files
+## [Exercise 2: `for` loop over files](/EXP6/for_files.sh)
 
 ### Task Statement:
 
@@ -58,7 +58,7 @@ done
 
 ---
 
-## Exercise 3: C-style `for` loop
+## [Exercise 3: C-style `for` loop](/EXP6/for_cstyle.sh)
 
 ### Task Statement:
 
@@ -78,7 +78,7 @@ done
 
 ---
 
-## Exercise 4: `while` loop and reading input
+## [Exercise 4: `while` loop and reading input](/EXP6/while.sh)
 
 ### Task Statement:
 
@@ -87,12 +87,10 @@ Write a `while` loop that reads lines from a file or from user input.
 ### Command(s):
 
 ```bash
-# Read from file
 while read -r line; do
   echo "Line: $line"
 done < sample.txt
 
-# Read from user with exit condition
 while true; do
   read -p "Enter a number (0 to exit): " n
   if [[ $n -eq 0 ]]; then
@@ -108,7 +106,7 @@ done
 
 ---
 
-## Exercise 5: `until` loop
+## [Exercise 5: `until` loop](/EXP6/until.sh)
 
 ### Task Statement:
 
@@ -130,7 +128,7 @@ done
 
 ---
 
-## Exercise 6: `break` and `continue`
+## [Exercise 6: `break` and `continue`](/EXP6/break_continue.sh)
 
 ### Task Statement:
 
@@ -156,7 +154,7 @@ done
 
 ---
 
-## Exercise 7: Nested loops
+## [Exercise 7: Nested loops](/EXP6/nested.sh)
 
 ### Task Statement:
 
@@ -181,7 +179,7 @@ done
 
 ## Assignments
 
-### Assignment 1: Factorial of a Number
+### [Assignment 1: Factorial of a Number](/EXP6/a1.sh)
 
 ### Command(s):
 
@@ -202,7 +200,7 @@ echo "Factorial of $num is $fact"
 
 ---
 
-### Assignment 2: Fibonacci Series
+### [Assignment 2: Fibonacci Series](/EXP6/a2.sh)
 
 ### Command(s):
 
@@ -228,7 +226,7 @@ echo
 
 ---
 
-### Assignment 3: Sum of Digits
+### [Assignment 3: Sum of Digits](/EXP6/a3.sh)
 
 ### Command(s):
 
@@ -252,7 +250,7 @@ echo "Sum of digits of $num is $sum"
 
 ---
 
-### Assignment 4: Reverse a Number
+### [Assignment 4: Reverse a Number](/EXP6/a4.sh)
 
 ### Command(s):
 
@@ -276,7 +274,7 @@ echo "Reverse of $num is $rev"
 
 ---
 
-### Assignment 5: Prime Number Check
+### [Assignment 5: Prime Number Check](/EXP6/a5.sh)
 
 ### Command(s):
 

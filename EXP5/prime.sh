@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Enter a numebr: "
+echo "Enter a number: "
 read num
 flag=0
 
