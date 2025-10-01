@@ -115,7 +115,6 @@ crontab -e
 ```
 <!--
 ### Output:
-
 <p align="center">
 <img src="/img/exp7_cron.png" width="900">
 </p>
