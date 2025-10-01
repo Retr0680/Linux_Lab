@@ -6,6 +6,8 @@
 
 **Course:** B.Tech CSE B77
 
+**Email:** hrithvik.29169@stu.upes.ac.in
+
 ---
 
 ## Index
