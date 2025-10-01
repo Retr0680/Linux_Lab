@@ -113,6 +113,10 @@ Schedule a script to run every day at 7:00 AM using `cron`.
 crontab -e
 0 7 * * * /home/retr0/myscript.sh
 ```
+
+### Output:
+
+![exp7_cron](/.img/exp7_cron.png)
 <!--
 ### Output:
 <p align="center">
