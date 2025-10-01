@@ -14,7 +14,7 @@
 * Access to process management commands (`ps`, `top`, `kill`, `jobs`, `fg`, `bg`).
 * Access to scheduling utilities (`cron`, `at`).
 
-## Theory
+### Theory
 
 Every program running in Linux is a process identified by a unique process ID (PID). Shell programming allows automation of tasks including spawning and controlling processes. Process management commands like `ps`, `top`, `kill`, `jobs`, `bg`, and `fg` let users monitor and control execution. Scheduling utilities such as `cron` (repeated tasks) and `at` (one-time tasks) allow tasks to run automatically at defined times. Combining scripting with scheduling is a core system administration skill.
 
@@ -50,6 +50,7 @@ Run a process in background and bring it to the foreground.
 ### Command(s):
 
 ```bash
+#!/bin/bash
 sleep 60 &
 jobs
 fg %1

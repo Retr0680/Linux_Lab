@@ -1,4 +1,4 @@
-## Experiment 3: Linux File Manipulation and System Manipulation I
+## Experiment 3: Linux File Manipulation and System Manipulation
 
 ### Name: Hrithvik Bhardwaj   Roll No.: 590029169   Date: 2025-09-23
 
