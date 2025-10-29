@@ -1,4 +1,4 @@
-# ?? Linux Lab Midterm Project  
+# Linux Lab Midterm Project  
 ## **Daily User Log Archiver**
 
 **Student Name:** Hrithvik Bhardwaj  
@@ -8,7 +8,7 @@
 
 ---
 
-## ?? **Goal**
+## **Goal**
 
 Create a **shell script** that:
 - Logs current system information (user, date, processes, disk usage)
@@ -17,7 +17,7 @@ Create a **shell script** that:
 
 ---
 
-## ?? **Implementation Details**
+## **Implementation Details**
 
 ### 1. Identify User
 The script identifies the user executing it using:
@@ -73,7 +73,7 @@ done
 
 ---
 
-## ?? **Full Shell Script**
+## **Full Shell Script**
 
 ```bash
 #!/usr/bin/env bash
@@ -196,7 +196,7 @@ exit 0
 
 ---
 
-## ? **Cron Job Setup**
+## **Cron Job Setup**
 
 To schedule the script to run daily at 8 PM:
 
@@ -216,7 +216,7 @@ crontab -l
 
 ---
 
-## ?? **Directory Structure**
+## **Directory Structure**
 ```
 ~/daily_logs/
 ¦
@@ -234,7 +234,7 @@ crontab -l
 
 ---
 
-## ?? **Optional Enhancements**
+## **Optional Enhancements**
 
 1. **Email Logs Automatically**
    ```bash
@@ -250,7 +250,7 @@ crontab -l
 
 ---
 
-## ?? **Commands Used**
+## **Commands Used**
 | Feature | Command | Purpose |
 |----------|----------|----------|
 | Identify User | `whoami` | Get current username |
@@ -263,7 +263,7 @@ crontab -l
 
 ---
 
-## ?? **Learning Outcomes**
+## **Learning Outcomes**
 - Practical experience with **shell scripting**, **loops**, and **conditions**
 - Understanding of **cron jobs** for automation
 - Use of **system commands** (`ps`, `df`, `find`, `tar`)
@@ -272,7 +272,7 @@ crontab -l
 
 ---
 
-## ? **Conclusion**
+## **Conclusion**
 
 The *Daily User Log Archiver* efficiently:
 - Automates daily system monitoring  
