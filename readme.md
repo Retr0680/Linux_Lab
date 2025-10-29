@@ -21,4 +21,4 @@
 * [Experiment 7: Shell Programming, Process and Schedule]([590029169]Exp[7]_ScriptLog.md)
 * [Experiment 8: Shell Programming continued]([590029169]Exp[8]_ScriptLog.md)
 * [Experiment 9: Shell Programming continued, System Performance Monitoring]([590029169]Exp[9]_ScriptLog.md)
-* [Midterm Project]("/Midterm/Linux Lab Midterm Project.md")
+* [Midterm Project](/Midterm/Linux%20Lab%20Midterm%20Project.md)
