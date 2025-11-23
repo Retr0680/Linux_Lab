@@ -1,12 +1,3 @@
----
-title: 'Assignment 1: Linux Commands & Shell Scripting Report'
-updated: 2025-11-23 18:11:53Z
-created: 2025-11-23 18:09:50Z
-latitude: 30.31649450
-longitude: 78.03219180
-altitude: 0.0000
----
-
 # Assignment 1: Linux Commands & Shell Scripting Report
 **Name:** Hrithvik Bhardwaj  
 **SAP ID:** 590029169  
