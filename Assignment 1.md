@@ -30,7 +30,7 @@ touch file1.txt file2.txt file3.txt
 ls -l
 ```
 ### Output
-![338c4598220b6a902be89f1899c3755d.png](../_resources/338c4598220b6a902be89f1899c3755d.png)
+![338c4598220b6a902be89f1899c3755d.png](/.img/338c4598220b6a902be89f1899c3755d.png)
 
 ## Task 2: File Permissions
 ### Commands
@@ -39,7 +39,7 @@ chmod 640 file1.txt
 ls -l file1.txt
 ```
 ### Output
-![fd36c6c355c0aab69c37eaa9ee888f9c.png](../_resources/fd36c6c355c0aab69c37eaa9ee888f9c.png)
+![fd36c6c355c0aab69c37eaa9ee888f9c.png](/.img/fd36c6c355c0aab69c37eaa9ee888f9c.png)
 
 ## Task 3: Text Processing
 ### Commands
@@ -48,7 +48,7 @@ grep "Linux" notes.txt
 grep -c "Linux" notes.txt
 ```
 ### Output
-![7e90a725ee127e997a7fa6292fe7517a.png](../_resources/7e90a725ee127e997a7fa6292fe7517a.png)
+![7e90a725ee127e997a7fa6292fe7517a.png](/.img/7e90a725ee127e997a7fa6292fe7517a.png)
 
 ## Task 4: Redirection and Pipes
 ### Commands
@@ -57,7 +57,7 @@ sort file1.txt > sorted.txt
 cat sorted.txt
 ```
 ### Output
-![5e29aca9a63abbb443766b92b3042a50.png](../_resources/5e29aca9a63abbb443766b92b3042a50.png)
+![5e29aca9a63abbb443766b92b3042a50.png](/.img/5e29aca9a63abbb443766b92b3042a50.png)
 
 ## Task 5: Shell Scripting – Arithmetic
 ### Script
@@ -77,7 +77,7 @@ else
 fi
 ```
 ### Output
-![b9d22894387ab5d98b924bde568e27e3.png](../_resources/b9d22894387ab5d98b924bde568e27e3.png)
+![b9d22894387ab5d98b924bde568e27e3.png](/.img/b9d22894387ab5d98b924bde568e27e3.png)
 
 ## Task 6: File Searching
 ### Commands
@@ -85,7 +85,7 @@ fi
 find ~ -name "*.txt" -mtime -7
 ```
 ### Output
-![b74818ede3dfe230d41362f778e8acff.png](../_resources/b74818ede3dfe230d41362f778e8acff.png)
+![b74818ede3dfe230d41362f778e8acff.png](/.img/b74818ede3dfe230d41362f778e8acff.png)
 
 ## Task 7: Archiving and Compression
 ### Commands
@@ -95,7 +95,7 @@ gzip MyLinuxFiles.tar
 tar -xvf MyLinuxFiles.tar.gz
 ```
 ### Output
-![258ab5f045745149688bcd74799ad040.png](../_resources/258ab5f045745149688bcd74799ad040.png)
+![258ab5f045745149688bcd74799ad040.png](/.img/258ab5f045745149688bcd74799ad040.png)
 
 ## Task 8: Networking
 ### Commands
@@ -104,7 +104,7 @@ ip a
 ping -c 4 google.com
 ```
 ### Output
-![025617399b0593018b647d13c5c814ee.png](../_resources/025617399b0593018b647d13c5c814ee.png)
+![025617399b0593018b647d13c5c814ee.png](/.img/025617399b0593018b647d13c5c814ee.png)
 
 ## Task 9: Largest of Three Numbers
 ### Script
@@ -121,7 +121,7 @@ else
 fi
 ```
 ### Output
-![b02f01f8fd64a1048e7b4d9d2f186e78.png](../_resources/b02f01f8fd64a1048e7b4d9d2f186e78.png)
+![b02f01f8fd64a1048e7b4d9d2f186e78.png](/.img/b02f01f8fd64a1048e7b4d9d2f186e78.png)
 
 ## Task 10: Sum of First N Natural Numbers
 ### Script
@@ -137,7 +137,7 @@ done
 echo "Sum of first $n natural numbers = $sum"
 ```
 ### Output
-![d415bdfcaf523744cf6b22c9ba8a5221.png](../_resources/d415bdfcaf523744cf6b22c9ba8a5221.png)
+![d415bdfcaf523744cf6b22c9ba8a5221.png](/.img/d415bdfcaf523744cf6b22c9ba8a5221.png)
 
 ## Result
 All 10 tasks of Assignment-1 were successfully executed.
