@@ -1,11 +1,3 @@
----
-updated: 2025-11-24 18:23:02Z
-created: 2025-11-23 18:09:50Z
-latitude: 30.31649450
-longitude: 78.03219180
-altitude: 0.0000
----
-
 # Assignment 2: Linux & Shell Scripting Tasks
 **Name:** Hrithvik Bhardwaj  
 **SAP ID:** 590029169  
